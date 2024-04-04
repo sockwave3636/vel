@@ -3,7 +3,7 @@ import { createRoomContext, createLiveblocksContext } from "@liveblocks/react";
 import { Layer,Color } from "./types/canvas";
 const client = createClient({
   throttle:16,
-  publicApiKey: "/api/liveblocks-auth",
+ authEndpoint:"/api/liveblocks-auth",
   
   async resolveUsers({ userIds }) {
     // Used only for Comments and Notifications. Return a list of user information
